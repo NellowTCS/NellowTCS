@@ -1,39 +1,79 @@
 # 👋 Hi, I'm Neel (NellowTCS)
 
-I'm a developer and designer passionate about building interactive web applications, game development, and hardware projects. Currently, I'm focusing on creating offline-capable tools and exploring the intersection of software and hardware.
+I'm a developer and designer focused on building interactive web apps, game development, and hardware projects. Currently exploring offline tools and the intersection of software and hardware.
 
 ---
 
-## 🛠️ Technologies & Tools
+## 🛠️ Technologies
 
 * **Languages**: JavaScript, HTML, CSS, Python, C, C++, TypeScript, Svelte
-* **Frameworks & Libraries**: React, Node.js, Express
+* **Frameworks**: React, Node.js, Express
 * **Tools**: Git, Docker, Webpack, Vite
-* **Hardware**: ESP32, PCB Design, CAD Modeling, and learning more 
+* **Hardware**: ESP32, PCB Design, CAD Modeling
 
 ---
 
 ## 🚀 Featured Projects
 
-* **[TeleporterDash](https://github.com/NellowTCS/TeleporterDash)**: A fast-paced platformer game built with HTML and JavaScript. Explore levels and create your own in the [Level Creator](https://teleporterdash.github.io/Level%20Editor/leveleditor.html). Also available on [itch.io](https://nellowtcs.itch.io/teleporterdash).
-
-* **[HTMLPlayer](https://github.com/HTMLToolkit/HTMLPlayer)**: An offline MP3 and OGG music player with playlists, ratings, and persistence. Try it live [here](https://htmltoolkit.github.io/HTMLPlayer/).
-
-* **[HTMLReader](https://github.com/HTMLToolkit/HTMLReader)**: A browser-based ePub reader with a built-in library and local storage support. Check it out [here](https://htmltoolkit.github.io/HTMLReader/).
-
-* **[HTMLNodeMapper](https://github.com/HTMLToolkit/HTMLNodeMapper)**: A tool for visualizing HTML, CSS, and JavaScript structures in a node-based map, aiding in debugging and optimization. Explore it [here](https://htmltoolkit.github.io/HTMLNodeMapper/).
+* **[TeleporterDash](https://github.com/NellowTCS/TeleporterDash)**: Platformer game with a level creator. [Play here](https://teleporterdash.github.io/Level%20Editor/leveleditor.html).
+* **[HTMLPlayer](https://github.com/HTMLToolkit/HTMLPlayer)**: Offline MP3/OGG player. [Try it live](https://htmltoolkit.github.io/HTMLPlayer/).
+* **[HTMLReader](https://github.com/HTMLToolkit/HTMLReader)**: ePub reader with library and local storage. [Try it live](https://htmltoolkit.github.io/HTMLReader/).
+* **[HTMLNodeMapper](https://github.com/HTMLToolkit/HTMLNodeMapper)**: Visualizes HTML, CSS, and JavaScript structures. [Explore it](https://htmltoolkit.github.io/HTMLNodeMapper/).
 
 ---
 
 ## 🛠️ Hardware Projects
 
-* **[ESP32S2ETH2WiFi-PCB](https://oshwlab.com/nellowtcs/esp32eth2wifi2)**: A custom PCB design for dynamic switching between wired and wireless communication using the ESP32-S2.
-
-* **[Tactility Contributions (Fork)](https://github.com/NellowTCS/Tactilty)**: Contributed to the Tactility project by starting to add support for the ESP32-2432S022C display module.
+* **[ESP32S2ETH2WiFi-PCB](https://oshwlab.com/nellowtcs/esp32eth2wifi2)**: Custom PCB for dynamic wired/wireless switching.
+* **[Tactility Contributions](https://github.com/NellowTCS/Tactilty)**: Added ESP32-2432S022C support to Tactility.
 
 ---
 
-## 🌐 Connect with Me
+## 🌐 Connect
+
+* [GitHub](https://github.com/NellowTCS)
+* [Blog](https://nellowtcs.github.io/)
+* [itch.io](https://nellowtcs.itch.io/)
+
+---
+
+This should make things a bit more streamlined!
+Here’s a more concise version:
+
+---
+
+# 👋 Hi, I'm Neel (NellowTCS)
+
+I'm a developer and designer focused on building interactive web apps, game development, and hardware projects. Currently exploring offline tools and the intersection of software and hardware.
+
+---
+
+## 🛠️ Technologies
+
+* **Languages**: JavaScript, HTML, CSS, Python, C, C++, TypeScript, Svelte
+* **Frameworks**: React, Node.js, Express
+* **Tools**: Git, Docker, Webpack, Vite
+* **Hardware**: ESP32, PCB Design, CAD Modeling
+
+---
+
+## 🚀 Featured Projects
+
+* **[TeleporterDash](https://github.com/NellowTCS/TeleporterDash)**: Platformer game with a level creator. [Play here](https://teleporterdash.github.io/Level%20Editor/leveleditor.html).
+* **[HTMLPlayer](https://github.com/HTMLToolkit/HTMLPlayer)**: Offline MP3/OGG player. [Try it live](https://htmltoolkit.github.io/HTMLPlayer/).
+* **[HTMLReader](https://github.com/HTMLToolkit/HTMLReader)**: ePub reader with library and local storage. [Try it live](https://htmltoolkit.github.io/HTMLReader/).
+* **[HTMLNodeMapper](https://github.com/HTMLToolkit/HTMLNodeMapper)**: Visualizes HTML, CSS, and JavaScript structures. [Explore it](https://htmltoolkit.github.io/HTMLNodeMapper/).
+
+---
+
+## 🛠️ Hardware Projects
+
+* **[ESP32S2ETH2WiFi-PCB](https://oshwlab.com/nellowtcs/esp32eth2wifi2)**: Custom PCB for dynamic wired/wireless switching.
+* **[Tactility Contributions](https://github.com/NellowTCS/Tactilty)**: Added ESP32-2432S022C support to Tactility.
+
+---
+
+## 🌐 Connect
 
 * [GitHub](https://github.com/NellowTCS)
 * [Blog](https://nellowtcs.github.io/)
