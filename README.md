@@ -1,4 +1,4 @@
-👋 **Hi, I'm Neel (NellowTCS)**
+👋 **Hi, I'm Neel (NellowTCS)**  
 Developer & designer passionate about interactive web apps, game development, and hardware. Currently focused on offline tools and software-hardware integration.
 
 ---
