@@ -3,12 +3,29 @@ I’m a developer and designer passionate about building interactive web apps, g
 
 ---
 
-## 🛠️ **Technologies & Tools**
+<picture>
+  <source
+    srcset="https://github-readme-stats.vercel.app/api?username=NellowTCS&show_icons=true&bg_color=35,0a192f,1f2937&title_color=ffffff&icon_color=ffffff"
+    media="(prefers-color-scheme: dark)"
+  />
+  <source
+    srcset="https://github-readme-stats.vercel.app/api?username=NellowTCS&show_icons=true&bg_color=35,2196F3,21CBF3&title_color=ffffff&icon_color=ffffff"
+    media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)"
+  />
+  <img src="https://github-readme-stats.vercel.app/api?username=NellowTCS&show_icons=true&bg_color=35,2196F3,21CBF3&title_color=ffffff&icon_color=ffffff" />
+</picture>
 
-* **Languages**: JavaScript, HTML, CSS, Python, C, C++, TypeScript, Svelte
-* **Frameworks/Libraries**: React, Node.js, Express
-* **Tools**: Git, Docker, Webpack, Vite
-* **Hardware**: ESP32, PCB Design, CAD Modeling
+<picture>
+  <source
+    srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=NellowTCS&layout=compact&exclude_repo=Tactility&langs_count=8&bg_color=35,#0a192f,#1f2937&title_color=ffffff&icon_color=ffffff"
+    media="(prefers-color-scheme: dark)"
+  />
+  <source
+    srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=NellowTCS&layout=compact&exclude_repo=Tactility&langs_count=8&bg_color=35,2196F3,21CBF3&title_color=ffffff&icon_color=ffffff"
+    media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)"
+  />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=NellowTCS&layout=compact&exclude_repo=Tactility&langs_count=8&bg_color=35,2196F3,21CBF3&title_color=ffffff&icon_color=ffffff" />
+</picture>
 
 ---
 
