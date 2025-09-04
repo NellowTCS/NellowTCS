@@ -5,8 +5,8 @@ I’m a developer and designer passionate about building interactive web apps, g
 
 [![NellowTCS's GitHub stats-Dark](https://github-readme-stats.vercel.app/api?username=NellowTCS&show_icons=true&bg_color=35,00055e,00505e&title_color=ffffff&icon_color=ffffff&text_color=ffffff#gh-dark-mode-only)](https://github.com/anuraghazra/github-readme-stats#gh-dark-mode-only)
 [![NellowTCS's GitHub stats-Light](https://github-readme-stats.vercel.app/api?username=NellowTCS&show_icons=true&bg_color=35,2196F3,21CBF3&title_color=ffffff&icon_color=ffffff#gh-light-mode-only)](https://github.com/anuraghazra/github-readme-stats#gh-light-mode-only)
-[![NellowTCS's GitHub Languages-Dark](https://github-readme-stats.vercel.app/api/top-langs/?username=NellowTCS&layout=compact&exclude_repo=Tactility&langs_count=8&bg_color=35,00055e,00505e&title_color=ffffff&icon_color=ffffff&text_color=ffffff#gh-dark-mode-only)](https://github.com/anuraghazra/github-readme-stats#gh-dark-mode-only)
-[![NellowTCS's GitHub Languages-Light](https://github-readme-stats.vercel.app/api/top-langs/?username=NellowTCS&layout=compact&exclude_repo=Tactility&langs_count=8&bg_color=35,2196F3,21CBF3&title_color=ffffff&icon_color=ffffff#gh-light-mode-only)](https://github.com/anuraghazra/github-readme-stats#gh-light-mode-only)
+[![NellowTCS's GitHub Languages-Dark](https://github-readme-stats.vercel.app/api/top-langs/?username=NellowTCS&layout=compact&hide=C++,C&langs_count=8&bg_color=35,00055e,00505e&title_color=ffffff&icon_color=ffffff&text_color=ffffff#gh-dark-mode-only)](https://github.com/anuraghazra/github-readme-stats#gh-dark-mode-only)
+[![NellowTCS's GitHub Languages-Light](https://github-readme-stats.vercel.app/api/top-langs/?username=NellowTCS&layout=compact&hide=C++,C&langs_count=8&bg_color=35,2196F3,21CBF3&title_color=ffffff&icon_color=ffffff#gh-light-mode-only)](https://github.com/anuraghazra/github-readme-stats#gh-light-mode-only)
 
 ---
 
