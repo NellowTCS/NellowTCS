@@ -27,6 +27,6 @@ I’m a developer and designer passionate about building interactive web apps, g
 
 ## 🌐 **Connect with Me**
 
-* [GitHub](https://github.com/NellowTCS) | [Blog](https://nellowtcs.github.io/) | [itch.io](https://nellowtcs.itch.io/)
+* [GitHub](https://github.com/NellowTCS) | [Blog](https://nellowtcs.me/) | [itch.io](https://nellowtcs.itch.io/)
 
 ![](https://hit.yhype.me/github/profile?account_id=179058539)
