@@ -21,7 +21,7 @@ I’m a developer and designer passionate about building interactive web apps, g
 ## 🛠️ **Hardware Projects**
 
 * **[ESP32S2ETH2WiFi-PCB](https://oshwlab.com/nellowtcs/esp32eth2wifi2)**: Custom PCB for switching between wired and wireless with ESP32-S2.
-* **[Tactility Contributions](https://github.com/NellowTCS/Tactilty)**: Added support for ESP32-2432S022C display module.
+* **[Tactility Contributions](https://github.com/NellowTCS/Tactility)**: Active contributor!
 
 ---
 
