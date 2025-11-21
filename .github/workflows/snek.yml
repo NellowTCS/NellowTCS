@@ -1,4 +1,4 @@
-name: Generate GitHub Snake (gradient)
+name: Generate GitHub Snek (gradient)
 
 on:
   workflow_dispatch:
@@ -17,7 +17,7 @@ jobs:
         with:
           # github user name to read the contribution graph from
           github_user_name: NellowTCS
-          # output path; set the snake color to the left gradient stop so we can find/replace it later
+          # outputs is a multiline string; keep the pipe and indent exactly as shown
           outputs: |
             dist/github-snake.svg?color_snake=#2196F3
 
@@ -39,16 +39,16 @@ jobs:
 
           s = svg_path.read_text(encoding='utf-8')
 
-          # Prepare gradient defs
           grad_id = "snakeGradient"
-          gradient_defs = f'''
-  <defs>
-    <linearGradient id="{grad_id}" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#2196F3"/>
-      <stop offset="100%" stop-color="#21CBF3"/>
-    </linearGradient>
-  </defs>
-'''
+          # Build the SVG defs using concatenated string
+          gradient_defs = (
+              '<defs>\n'
+              '  <linearGradient id="' + grad_id + '" x1="0%" y1="0%" x2="100%" y2="0%">\n'
+              '    <stop offset="0%" stop-color="#2196F3"/>\n'
+              '    <stop offset="100%" stop-color="#21CBF3"/>\n'
+              '  </linearGradient>\n'
+              '</defs>\n'
+          )
 
           # Insert gradient defs right after the opening <svg ...> tag
           m = re.search(r'(<svg\b[^>]*>)', s, flags=re.IGNORECASE)
@@ -66,26 +66,21 @@ jobs:
           s_new = s_new.replace("stroke='#2196F3'", f'stroke="url(#{grad_id})"')
 
           if s_new == s:
-              print("No direct occurrences of #2196F3 found for replacement. (The SVG might use inline styles or different hex).")
-              # Try replacing occurrences inside style="" attributes (e.g., style="fill:#2196F3;")
+              # fallback: try matching inside style attributes like style="fill:#2196F3;"
               s_new = re.sub(r'(?i)fill:\s*#2196F3', f'fill:url(#{grad_id})', s_new)
               s_new = re.sub(r'(?i)stroke:\s*#2196F3', f'stroke:url(#{grad_id})', s_new)
 
-          # Overwrite file
           svg_path.write_text(s_new, encoding='utf-8')
           print("Patched SVG to use gradient.")
           PY
 
-      - name: Show a preview snippet (first 40 lines)
-        run: |
-          echo "---- preview ----"
-          sed -n '1,40p' dist/github-snake.svg || true
-          echo "---- end preview ----"
-
       - name: Commit and push generated SVG
+        env:
+          GIT_AUTHOR_NAME: "github-actions[bot]"
+          GIT_AUTHOR_EMAIL: "41898282+github-actions[bot]@users.noreply.github.com"
         run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config user.name "${GIT_AUTHOR_NAME}"
+          git config user.email "${GIT_AUTHOR_EMAIL}"
           git add dist/github-snake.svg
           git commit -m "chore: generate github-snake.svg with gradient" || echo "no changes to commit"
           git push || echo "push failed (maybe read-only token)"
