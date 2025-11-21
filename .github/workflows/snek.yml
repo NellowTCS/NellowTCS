@@ -1,17 +1,18 @@
-name: Generate GitHub Snek (gradient)
+name: Generate GitHub Snek (high-contrast gradient)
 
 on:
   workflow_dispatch:
   schedule:
-    - cron: '0 6 * * *' # daily at 06:00 UTC — change or remove if you don't want a schedule
-
-    
-permissions: 
-  contents: write
+    - cron: '0 6 * * *'
 
 jobs:
   generate:
     runs-on: ubuntu-latest
+    env:
+      GRAD_LEFT: "#0253cbff" # (left of gradient)
+      GRAD_RIGHT: "#21CBF3"  # (right of gradient)
+      BG_COLOR: "#abe9d1ff"    # change to any hex (e.g. "#000000") or set to "" for transparent
+
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -19,22 +20,21 @@ jobs:
       - name: Generate SVG (svg-only)
         uses: Platane/snk/svg-only@v3
         with:
-          # github user name to read the contribution graph from
           github_user_name: NellowTCS
-          # outputs is a multiline string; keep the pipe and indent exactly as shown
           outputs: |
-            dist/github-snake.svg?color_snake=#2196F3
+            dist/github-snake.svg?color_snake=#0D47A1
 
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
           python-version: '3.x'
 
-      - name: Patch SVG to use linear gradient
+      - name: Patch SVG to use linear gradient and background
         run: |
           python - <<'PY'
           from pathlib import Path
           import re
+          import os
 
           svg_path = Path('dist/github-snake.svg')
           if not svg_path.exists():
@@ -43,39 +43,53 @@ jobs:
 
           s = svg_path.read_text(encoding='utf-8')
 
-          grad_id = "snakeGradient"
-          # Build the SVG defs using concatenated string
+          grad_left = os.environ.get('GRAD_LEFT', '#0D47A1')
+          grad_right = os.environ.get('GRAD_RIGHT', '#21CBF3')
+          bg_color = os.environ.get('BG_COLOR', '')
+
+          grad_id = "snakeGradientHighContrast"
+
+          # Build defs (no triple-quoted literals to avoid YAML pitfalls)
           gradient_defs = (
               '<defs>\n'
-              '  <linearGradient id="' + grad_id + '" x1="0%" y1="0%" x2="100%" y2="0%">\n'
-              '    <stop offset="0%" stop-color="#2196F3"/>\n'
-              '    <stop offset="100%" stop-color="#21CBF3"/>\n'
+              f'  <linearGradient id="{grad_id}" x1="0%" y1="0%" x2="100%" y2="0%">\n'
+              f'    <stop offset="0%" stop-color="{grad_left}"/>\n'
+              f'    <stop offset="100%" stop-color="{grad_right}"/>\n'
               '  </linearGradient>\n'
               '</defs>\n'
           )
 
-          # Insert gradient defs right after the opening <svg ...> tag
+          # Optional background rect (inserted after defs so it sits behind everything)
+          rect_el = ''
+          if bg_color and bg_color.strip() != '':
+              # ensure the color is used literally
+              rect_el = f'<rect width="100%" height="100%" fill="{bg_color}"/>\n'
+
+          # Insert defs (+ rect if any) right after the opening <svg ...> tag
           m = re.search(r'(<svg\b[^>]*>)', s, flags=re.IGNORECASE)
           if m:
-              s = s.replace(m.group(1), m.group(1) + gradient_defs, 1)
-              print("Inserted gradient <defs> after <svg> tag.")
+              injection = m.group(1) + gradient_defs + rect_el
+              s = s.replace(m.group(1), injection, 1)
+              print("Inserted gradient <defs> and background (if set) after <svg> tag.")
           else:
-              print("Warning: <svg> tag not found — skipping defs injection.")
+              print("Warning: <svg> tag not found — skipping defs/background injection.")
 
-          # Replace the snake color occurrences with gradient reference.
-          # We generated the SVG with color_snake=#2196F3, so target that exact string.
-          s_new = s.replace('fill="#2196F3"', f'fill="url(#{grad_id})"')
-          s_new = s_new.replace("fill='#2196F3'", f'fill="url(#{grad_id})"')
-          s_new = s_new.replace('stroke="#2196F3"', f'stroke="url(#{grad_id})"')
-          s_new = s_new.replace("stroke='#2196F3'", f'stroke="url(#{grad_id})"')
+          # Replace snake color occurrences with gradient reference.
+          # We instructed the action to generate with color_snake equal to grad_left
+          url_ref = f'url(#{grad_id})'
+          # common direct attribute cases
+          s_new = s.replace(f'fill="{grad_left}"', f'fill="{url_ref}"')
+          s_new = s_new.replace(f"fill='{grad_left}'", f'fill="{url_ref}"')
+          s_new = s_new.replace(f'stroke="{grad_left}"', f'stroke="{url_ref}"')
+          s_new = s_new.replace(f"stroke='{grad_left}'", f'stroke="{url_ref}"')
 
           if s_new == s:
-              # fallback: try matching inside style attributes like style="fill:#2196F3;"
-              s_new = re.sub(r'(?i)fill:\s*#2196F3', f'fill:url(#{grad_id})', s_new)
-              s_new = re.sub(r'(?i)stroke:\s*#2196F3', f'stroke:url(#{grad_id})', s_new)
+              # fallback: try matching inside style attributes like style="fill:#0D47A1;"
+              s_new = re.sub(r'(?i)fill:\s*' + re.escape(grad_left), f'fill:{url_ref}', s_new)
+              s_new = re.sub(r'(?i)stroke:\s*' + re.escape(grad_left), f'stroke:{url_ref}', s_new)
 
           svg_path.write_text(s_new, encoding='utf-8')
-          print("Patched SVG to use gradient.")
+          print("Patched SVG to use gradient and background (if provided).")
           PY
 
       - name: Commit and push generated SVG
@@ -86,5 +100,5 @@ jobs:
           git config user.name "${GIT_AUTHOR_NAME}"
           git config user.email "${GIT_AUTHOR_EMAIL}"
           git add dist/github-snake.svg
-          git commit -m "chore: generate github-snake.svg with gradient" || echo "no changes to commit"
+          git commit -m "chore: generate github-snake.svg" || echo "no changes to commit"
           git push || echo "push failed (maybe read-only token)"
