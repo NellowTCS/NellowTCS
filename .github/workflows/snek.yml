@@ -14,7 +14,7 @@ jobs:
     env:
       GRAD_LEFT: "#0253cbff" # (left of gradient)
       GRAD_RIGHT: "#21CBF3"  # (right of gradient)
-      BG_COLOR: "#abe9d1ff"    # change to any hex (e.g. "#000000") or set to "" for transparent
+      BG_COLOR: ""    # change to any hex (e.g. "#000000") or set to "" for transparent
 
     steps:
       - name: Checkout repository
