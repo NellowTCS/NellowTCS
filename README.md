@@ -8,9 +8,13 @@ I’m a developer and designer passionate about building interactive web apps, g
 [![NellowTCS's GitHub Languages-Dark](https://github-readme-stats.vercel.app/api/top-langs/?username=NellowTCS&layout=compact&hide=C++,C&langs_count=8&bg_color=35,00055e,00505e&title_color=ffffff&icon_color=ffffff&text_color=ffffff#gh-dark-mode-only)](https://github.com/anuraghazra/github-readme-stats#gh-dark-mode-only)
 [![NellowTCS's GitHub Languages-Light](https://github-readme-stats.vercel.app/api/top-langs/?username=NellowTCS&layout=compact&hide=C++,C&langs_count=8&bg_color=35,2196F3,21CBF3&title_color=ffffff&icon_color=ffffff#gh-light-mode-only)](https://github.com/anuraghazra/github-readme-stats#gh-light-mode-only)
 
+## **SNEK**
+
+<img src="./dist/github-snake.svg">
+
 ---
 
-## 🚀 **Featured Projects**
+## **Featured Projects**
 
 * **[TeleporterDash](https://github.com/NellowTCS/TeleporterDash)**: Fast-paced platformer game. Try the [Level Creator](https://teleporterdash.github.io/Level%20Editor/leveleditor.html), available on [itch.io](https://nellowtcs.itch.io/teleporterDash).
 * **[HTMLPlayer](https://github.com/HTMLToolkit/HTMLPlayer)**: Offline MP3/OGG player with playlists and persistence. [Try it live](https://htmltoolkit.github.io/HTMLPlayer/).
@@ -18,14 +22,14 @@ I’m a developer and designer passionate about building interactive web apps, g
 
 ---
 
-## 🛠️ **Hardware Projects**
+## **Hardware Projects**
 
 * **[ESP32S2ETH2WiFi-PCB](https://oshwlab.com/nellowtcs/esp32eth2wifi2)**: Custom PCB for switching between wired and wireless with ESP32-S2.
 * **[Tactility Contributions](https://github.com/NellowTCS/Tactility)**: Active contributor!
 
 ---
 
-## 🌐 **Connect with Me**
+## **Connect with Me**
 
 * [GitHub](https://github.com/NellowTCS) | [Blog](https://nellowtcs.me/) | [itch.io](https://nellowtcs.itch.io/)
 
