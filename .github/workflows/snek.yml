@@ -5,6 +5,10 @@ on:
   schedule:
     - cron: '0 6 * * *' # daily at 06:00 UTC — change or remove if you don't want a schedule
 
+    
+permissions: 
+  contents: write
+
 jobs:
   generate:
     runs-on: ubuntu-latest
