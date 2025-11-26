@@ -8,9 +8,14 @@ I’m a developer and designer passionate about building interactive web apps, g
 [![NellowTCS's GitHub Languages-Dark](https://github-readme-stats.vercel.app/api/top-langs/?username=NellowTCS&layout=compact&hide=C++,C&langs_count=8&bg_color=35,00055e,00505e&title_color=ffffff&icon_color=ffffff&text_color=ffffff#gh-dark-mode-only)](https://github.com/anuraghazra/github-readme-stats#gh-dark-mode-only)
 [![NellowTCS's GitHub Languages-Light](https://github-readme-stats.vercel.app/api/top-langs/?username=NellowTCS&layout=compact&hide=C++,C&langs_count=8&bg_color=35,2196F3,21CBF3&title_color=ffffff&icon_color=ffffff#gh-light-mode-only)](https://github.com/anuraghazra/github-readme-stats#gh-light-mode-only)
 
-## **SNEK**
+---
 
+### **SNEK**
 <img src="./dist/github-snake.svg">
+
+---
+
+<table><tbody><tr><td><a href="https://octo-ring.com/"><img src="https://octo-ring.com/static/img/widget/top.png" width="99%" alt="Octo Ring logo" align="top"></a><br><a href="https://octo-ring.com/p/NellowTCS/prev"><img src="https://octo-ring.com/static/img/widget/prev.png" width="33%" alt="previous" align="top" title="previous profile"></a><a href="https://octo-ring.com/p/NellowTCS/random"><img src="https://octo-ring.com/static/img/widget/random.png" width="33%" alt="random" align="top" title="random profile"></a><a href="https://octo-ring.com/p/NellowTCS/next"><img src="https://octo-ring.com/static/img/widget/next.png" width="33%" alt="next" align="top" title="next profile"></a><br><a href="https://octo-ring.com/"><img src="https://octo-ring.com/static/img/widget/bottom.png" width="99%" alt="check out other GitHub profiles in the Octo Ring" align="top"></a></td></tr></tbody></table>
 
 ---
 
