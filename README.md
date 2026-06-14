@@ -44,8 +44,11 @@
             <p>A language agnostic, easy to use, IPC library for cross-language integration. Write code in any language, communicate seamlessly.</p>
             <img src="https://img.shields.io/github/stars/Nisoku/Saikuro?style=social" alt="stars">
             <br>
-            <a href="https://nisoku.github.io/Saikuro/">
+            <a href="https://nisoku.org/Saikuro/">
                 <img src="https://img.shields.io/badge/Docs-f39c12?style=flat-square" alt="Docs" />
+            </a>
+            <a href="https://nisoku.org/Saikuro/demo">
+                <img src="https://img.shields.io/badge/Demo-f39c12?style=flat-square" alt="Demo" />
             </a>
         </td>
         <td width="50%">
@@ -87,7 +90,7 @@
             <p>The curvomorphic UI library - create beautiful, fluid interfaces with organic shapes and smooth interactions.</p>
             <img src="https://img.shields.io/github/stars/Nisoku/Sazami?style=social" alt="stars">
             <br>
-            <a href="https://nisoku.github.io/Sazami/">
+            <a href="https://nisoku.org/Sazami/">
                 <img src="https://img.shields.io/badge/Documentation-f39c12?style=flat-square" alt="Docs" />
             </a>
         </td>
@@ -107,7 +110,7 @@
             <p>Event-centric observability layer for complex apps. A powerful logging library for understanding your application.</p>
             <img src="https://img.shields.io/github/stars/Nisoku/Satori?style=social" alt="stars">
             <br>
-            <a href="https://nisoku.github.io/Satori">
+            <a href="https://nisoku.org/Satori">
                 <img src="https://img.shields.io/badge/Docs-3498db?style=flat-square" alt="Docs" />
             </a>
         </td>
@@ -129,7 +132,7 @@
             <h3><a href="https://github.com/Nisoku/Sakko"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" width="20" height="20" style="vertical-align: middle;" /> Sakko</a></h3>
             <p>Sakko, the modern DSL (Design Sub-Language) - define designs programmatically with a clean, expressive syntax.</p>
             <br>
-            <a href="https://nisoku.github.io/Sakko/">
+            <a href="https://nisoku.org/Sakko/">
                 <img src="https://img.shields.io/badge/Learn_More-d35400?style=flat-square" alt="Learn More" />
             </a>
         </td>
