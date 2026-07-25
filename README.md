@@ -240,9 +240,11 @@
         </picture>
       </a>
     </td>
-    <!-- Right: reserved -->
+    <!-- Right: Slack -->
     <td align="center" width="50%">
-      <!-- reserved for later -->
+        <picture>
+            <img src="https://slacktivity.hackclub.app/user/U0A718B489K?theme=dark&bg=%231f92cf&borderRadius=12px&idleMessage=not+doing+anything+rn" alt="Slack Status">
+        </picture>
     </td>
   </tr>
 </table>
