@@ -186,6 +186,10 @@
     <source media="(prefers-color-scheme: light)" srcset="./dist/github-snake.svg">
     <img src="./dist/github-snake.svg" alt="GitHub contribution snake" align="center">
 </picture>
+</br>
+<picture>
+    <img src="https://kodama-sigma.vercel.app/NellowTCS.svg?theme=sakura&animate=auto&tint=lang&species=momiji&lang=en" alt="Kodama Tree" align="center">
+</picture>
 
 ---
 
