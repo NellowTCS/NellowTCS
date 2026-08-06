@@ -197,18 +197,21 @@
 <h2 align="center">Talk to Me</h2>
 
 <p align="center">
-    <a href="https://nellowtcs.me/">
-        <img src="https://img.shields.io/badge/Website-nellowtcs.me-2196F3?style=for-the-badge&logo=internet-explorer&logoColor=white" alt="Website" />
-    </a>
     <a href="https://github.com/NellowTCS">
         <img src="https://img.shields.io/badge/GitHub-NellowTCS-24292f?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
     </a>
     <a href="https://gitlab.com/NellowTCS">
         <img src="https://img.shields.io/badge/GitLab-NellowTCS-FC6D26?style=for-the-badge&logo=gitlab&logoColor=white" alt="GitLab" />
     </a>
+    <a href="https://codeberg.com/NellowTCS">
+        <img src="https://img.shields.io/badge/Codeberg-NellowTCS-2185d0?style=for-the-badge&logo=codeberg&logoColor=white" alt="GitLab" />
+    </a>
 </p>
 
 <p align="center">
+    <a href="https://nellowtcs.me/">
+        <img src="https://img.shields.io/badge/Website-nellowtcs.me-2196F3?style=for-the-badge&logo=internet-explorer&logoColor=white" alt="Website" />
+    </a>
     <a href="https://mastodon.social/@nellowtcs">
         <img src="https://img.shields.io/badge/Mastodon-@nellowtcs-6364FF?style=for-the-badge&logo=mastodon&logoColor=white" alt="Mastodon" />
     </a>
